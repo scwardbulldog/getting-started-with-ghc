@@ -88,9 +88,29 @@ section h3 {
 }
 
 .participants-list {
-  list-style: disc inside;
+  list-style: none; /* hide bullet points */
   margin: 0;
-  padding-left: 14px;
+  padding-left: 0;
+}
+
+/* delete icon/button next to participant */
+.participant-delete {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.participant-delete:hover {
+  color: #8e0000;
+}
+.participant-delete:focus {
+  outline: 2px solid rgba(198,40,40,0.2);
+  border-radius: 4px;
 }
 
 .participant-item {
